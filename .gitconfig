@@ -1,0 +1,9 @@
+[user]
+	email = starvagrant@yahoo.com
+	name = James Ginns
+[core]
+	editor = vim
+[diff "exif"]
+	textconv = identifyverbose
+[diff "odf"]
+	textconv = odt2txt
