@@ -2,3 +2,4 @@
 *.ods diff=odf
 *.odt diff=odf
 *.odp diff=odf
+*.fen diff=fen
