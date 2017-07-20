@@ -1,13 +1,11 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 " set the runtime path to include Vundle and initialize
 " http://benmccormick.org/2014/07/21/learning-vim-in-2014-getting-more-from-vim-with-plugins/ 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-"
+"call vundle#begin('~/some/path/here') "
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 "
@@ -16,9 +14,12 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'nelsyeung/twig.vim'
+Plugin 'cg433n/vim-lilypond'
 " Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
+Plugin 'vim-scripts/fountain.vim'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
@@ -89,7 +90,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " mapping shortcuts
 :map <F2> :!xmodmap ~/.speedswapper<CR>
 :map <F3> :echo 'Current time is ' . strftime('%c')<CR>
-:map <F5> :!php -l %<CR>
+:map <F4> :!php -l %<CR>
 " NERDTree Mappings
 :map <C-n> :NERDTreeToggle<CR>
 
@@ -124,3 +125,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " mapping a program for jslinting
 ":map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 "
+filetype off
+set runtimepath+=/usr/local/share/lilypond/current/vim/
+filetype on
+syntax on
+
+autocmd BufRead, BufNewFile *.php setlocal expandtab softtabstop=4 shiftwidth=4 filetype=php
