@@ -123,9 +123,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Liquid Prompt, but only for interactive shells
-#[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
-
 function color_my_prompt {
     local __user_and_host="\[\033[01;32m\]\u@\h"
     local __cur_location="\[\033[01;33m\]\w"
