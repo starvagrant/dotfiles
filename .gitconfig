@@ -9,3 +9,5 @@
 	textconv = odt2txt
 [diff "fen"]
 	textconv = fendiff
+[diff "pdf"]
+	command= diffpdf

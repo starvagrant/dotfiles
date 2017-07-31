@@ -3,3 +3,4 @@
 *.odt diff=odf
 *.odp diff=odf
 *.fen diff=fen
+*.pdf diff=pdf
