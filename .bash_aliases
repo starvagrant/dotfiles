@@ -25,3 +25,4 @@ alias sgch='sudo git checkout'
 alias x='xmodmap'
 
 alias keys='echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode'
+alias platex='latex -output-format=pdf'
