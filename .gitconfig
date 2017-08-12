@@ -10,4 +10,4 @@
 [diff "fen"]
 	textconv = fendiff
 [diff "pdf"]
-	command= diffpdf
+	command= diffpdf --appearance
