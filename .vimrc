@@ -79,6 +79,13 @@ syntax on
 :set shiftwidth=4
 :set tabstop=4
 
+" allow for standard clipboard behavior
+:set paste
+
+" turn tabs to spaces
+:set expandtab
+:set softtabstop=4
+
 " Nerd Tree Settings
 " allow vim to close NERD Tree if it is the only open window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
