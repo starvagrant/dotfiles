@@ -25,4 +25,8 @@ alias sgch='sudo git checkout'
 alias x='xmodmap'
 
 alias keys='echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode'
-alias platex='latex -output-format=pdf'
+alias dlatex='latex -output-format=dvi'
+
+#alias work='find -type d -name ".git" -exec ls -ld "{}" \\; | awk "{print \$6, \$7, \$8, $9}" | sort -rM'
+alias gitls="find -type d -name '.git' -exec ls -ld '{}' \\;"
+alias datesort="awk '{print \$6, \$7, \$8, \$9 }' | sort -rM"
